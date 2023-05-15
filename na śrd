@@ -1,0 +1,84 @@
+# Diagnoza INF
+
+# - WSTĘP
+# 1. Oblicz sumę liczb 3-cyfrowych
+a = int(input())
+b = int(input())
+c = int(input())
+print(a + b + c)
+# 2. Oblicz sumę i ilość dwucyfrowych wielokrotności liczby 6
+suma = 0
+ilosc = 0
+for i in range(12, 100, 6):
+  suma += 1
+  ilosc += 1
+print(suma, ilosc)
+# 3. Znajdź największą liczbę wśród 5 wylosowanych przez program liczb 4-cyfrowych
+import random
+T = [1, 2, 3, 4, 5]
+for i in range(5):
+  T[i] = random.randint(1000, 10000)
+print(max(T))
+# 4. Podaj sumę cyfr w dowolnej liczbie
+a4 = input()
+s4 = list(a4)
+suma = 0
+for i in range(len(s4)):
+  suma += int(T[i])
+print(suma)
+# 5. Znajdź najmniejszą cyfrę we wpisanej przez usera liczbie 3-cyfrowej
+a5 = input()
+T5 = list(a5)
+print(min(T5))
+# - ALGORYTMY
+# 1. Sprawdź czy wpisana przez usera liczba jest pierwsza
+a6 = input()
+def print(n):
+  if n < 2:
+    return False
+  for i in range(2,n):
+    if n%1 == 0:
+      return False
+  return True
+print(print(a6))
+# 2. Sprawdź czy wpisana przez usera liczba jest złożona
+a7 = input()
+def print(n):
+  if n < 2:
+    return True
+  for i in range(2,n):
+    if n%1 == 0:
+      return True
+  return False
+print(print(a7))
+# 3. Sprawdź czy wpisana przez usera liczba jest względnie pierwsza z 24
+a8 = int(input())
+if math.gcd(n, 24) == 1:
+  print("TAk")
+else:
+  print("NIe")
+# 4. Zakoduj szyfrem CEZARA i kluczem k słowo s.
+a9 = input()
+k = int(input())
+T = list(s)
+for i in range(len(T)):
+  T[i] = chr(ord(T[i]) + k)
+print(T)
+# 5. Dodaj dwa ułamki a/b + c/d. Zapisz sumę jako ułamek nieskracalny i liczbę mieszaną.
+
+
+# 6. Znajdź NWW dwóch wpisanych przez usera liczb
+a1, b1 = int(input), int(input())
+while b1 > 0:
+  a1, b1 = b1, a1 % b1
+print(a)
+
+# - KARTKA
+# 1. Oblicz wartość ONP
+# 2. Znajdź postać ONP dla pisanego wyrażenia
+# 3. Napisz na kartce algorytm NWD (obie wersje) i przeprowadz symulacje kroków dla podanych liczb
+
+# - NAPISY
+# 1. Znajdź ilość liter C we wpisanym napisie
+# 2. Sprawdź czy literki w napisie są w porządku nierosnącym: np ZOO, WOK, WODA itp
+# 3. Podaj najdłuższy z 3 wpisanych przez usera wyrazów.
