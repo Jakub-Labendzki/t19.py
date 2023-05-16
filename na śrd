@@ -68,27 +68,40 @@ print(T)
 # 5. Dodaj dwa ułamki a/b + c/d. Zapisz sumę jako ułamek nieskracalny i liczbę mieszaną.
 
 from math import gcd
-a, b = int(input()), int(input())
+a, b = map(int,input().split("/"))
+c, d = map(int,input().split("/"))
+x, y = b, d
+ilocz = x * y
+while y>0:
+    x, y = y, x % y
+nww = ilocz // x
+e = (nww // b) * a
+f = (nww // d) * c
+g = e + f
+print(f"{a}/{b} + {c}/{d} = {e}/{nww} + {f}/{nww} = {g}/{nww}")
+
 dz = gcd(a, b)
 
-c = a // b
-l = a % b
-m = b
+c = g // nww
+l = g % nww
+m = nww
 
-x = l // dz
-y = m // dz
+x1 = l // dz
+y2 = m // dz
 
-print(f"Mieszany: {a}/{b} = {c} {x}/{y}")
+print(f"Mieszany: {g}/{nww} = {c} {x1}/{y2}")
 
-x = a // dz
-y = b // dz
-print(f"Nieskracalny: {a}/{b} = {x}/{y}")
+x2 = g // dz
+y3 = nww // dz
+print(f"Nieskracalny: {g}/{nww} = {x2}/{y3}")
 
 # 6. Znajdź NWW dwóch wpisanych przez usera liczb
 a1, b1 = int(input), int(input())
+iloczyn = a1 * b1
 while b1 > 0:
   a1, b1 = b1, a1 % b1
-print(a)
+nww = a1
+print(iloczyn // nww)
 
 # - KARTKA
 # 1. Oblicz wartość ONP
