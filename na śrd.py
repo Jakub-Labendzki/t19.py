@@ -25,7 +25,7 @@ a4 = input()
 s4 = list(a4)
 suma = 0
 for i in range(len(s4)):
-  suma += int(T[i])
+  suma += int(s4[i])
 print(suma)
 # 5. Znajdź najmniejszą cyfrę we wpisanej przez usera liczbie 3-cyfrowej
 a5 = input()
