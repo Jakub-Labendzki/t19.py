@@ -10,8 +10,9 @@ print(a + b + c)
 suma = 0
 ilosc = 0
 for i in range(12, 100, 6):
-  suma += 1
-  ilosc += 1
+    suma += i
+    if i % 6 == 0:
+        ilosc += 1
 print(suma, ilosc)
 # 3. Znajdź największą liczbę wśród 5 wylosowanych przez program liczb 4-cyfrowych
 import random
