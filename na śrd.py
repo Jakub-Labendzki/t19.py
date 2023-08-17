@@ -43,15 +43,15 @@ def is_prime(n):
   return True
 print(is_prime(a6))
 # 2. Sprawdź czy wpisana przez usera liczba jest złożona
-a7 = input()
-def print(n):
+a7 = int(input())
+def zlozona(n):
   if n < 2:
     return True
   for i in range(2,n):
     if n%i == 0:
       return True
   return False
-print(print(a7))
+print(zlozona(a7))
 # 3. Sprawdź czy wpisana przez usera liczba jest względnie pierwsza z 24
 import math
 a8 = int(input())
