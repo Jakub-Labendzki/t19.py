@@ -33,15 +33,15 @@ T5 = list(a5)
 print(min(T5))
 # - ALGORYTMY
 # 1. Sprawdź czy wpisana przez usera liczba jest pierwsza
-a6 = input()
-def print(n):
+a6 = int(input())
+def is_prime(n):
   if n < 2:
     return False
-  for i in range(2,n):
-    if n%1 == 0:
+  for i in range(2, n):
+    if n % i == 0:
       return False
   return True
-print(print(a6))
+print(is_prime(a6))
 # 2. Sprawdź czy wpisana przez usera liczba jest złożona
 a7 = input()
 def print(n):
